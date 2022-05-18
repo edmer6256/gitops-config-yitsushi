@@ -1,0 +1,14 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: hello-world
+  namespace: hello-world
+spec:
+  interval: 5m0s
+  path: ./applications/hello-world-nginx/
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: hello-world
+  targetNamespace: hello-world
