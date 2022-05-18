@@ -20,7 +20,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./clusters/flagger-kind
+  path: ./clusters/flagger-nginx-kind
   prune: true
   sourceRef:
     kind: GitRepository
