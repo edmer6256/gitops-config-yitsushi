@@ -4,4 +4,3 @@ resources:
   - namespace.yaml
   - git_repository.yaml
   - git_kustomization.yaml
-  - ingress_route.yaml
